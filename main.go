@@ -30,7 +30,7 @@ func main() {
 	if *countBytes {
 		fmt.Println(len(fileData))
 	} else if *countLines {
-		fmt.Println(bytes.Count(fileData, []byte("\n")), file)
+		fmt.Println(bytes.Count(fileData, []byte("\n")))
 	} else if *countWords {
 		fmt.Println(len(bytes.Fields(fileData)))
 	} else if *countChars {
